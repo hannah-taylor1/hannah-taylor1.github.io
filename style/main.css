@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,800&display=swap');
+
+
+body {
+    background-color: #00C8FF;
+    font-family: "Nunito", "helvetica", sans-serif;
+    height: 100%;
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+
+}
+
+nav {
+    background-color: black;
+    padding: 20px 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+nav ul li {
+    display: inline;
+    padding-right: 10px;
+    margin: 0;
+}
+
+nav ul li a:link {
+    text-decoration: none;
+    color: white;
+}
+
+nav a.current {
+    border-bottom: 2px solid #00C8FF;
+}
+
+
+
+nav ul li a:visited {
+    color: white;
+}
+
+nav ul li a:hover {
+    color: #00C8FF;
+}
+
+.logo {
+    border: 1px solid #00C8FF;
+    padding: 5px;
+    margin-right: 20px;
+}
+
+.logo a:link {
+    color: #00C8FF;
+    font-weight: 800;
+}
+
+.logo a:hover {
+    color: white;
+}
+
+main {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+h2{
+    margin-bottom: 50px;
+}
+
+#topic-heading {
+    padding: 5px 10px;
+    color: white;
+    background-color: rgb(5, 130, 165);
+}
+
+#topic-num {
+    background-color: black;
+    color: white;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 20px;
+    text-align: center;
+    transition: all .3s ease-in-out;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+}
+
+#topic-num h4 {
+    text-decoration: underline;
+}
+
+
+#topic-num:link{
+    text-decoration: none;
+}
+
+#topic-num:hover {
+    transform: scale(1.05);
+    background-color:rgb(5, 130, 165);
+    color: white;
+}
+
+
+
+#sections {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 10px;
+    width: 100%;
+    bottom: 0;
+}
+
+
+/*-----------------------------Journal-------------------------------------*/
+
+/* Collapsible used from https://www.w3schools.com/howto/howto_js_collapsible.asp */
+.journal-entry {
+    padding: 0 18px;
+    overflow: hidden;
+    max-height: 0;
+    background-color: white;
+    transition: max-height 0.2s ease-out;
+
+}
+
+.collapsible {
+    background-color: rgb(5, 130, 165);
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font: "Nunito";
+    font-size: 16px;
+    font-weight: 800;
+    max-height: 100%;
+}
+
+.collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
+.entry {
+      margin-bottom: 20px;
+  }
+
+  /*----------------------------Topics----------------------------------------*/
+.snippet {
+      width: 80%;
+  }
+
+.table {
+      width: 100%;
+  }
+
+.ticket-example {
+    margin: 0px 15px;
+}
+
+
+
