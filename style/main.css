@@ -172,16 +172,35 @@ footer {
 
   /*----------------------------Topics----------------------------------------*/
 .snippet {
-      width: 80%;
+      width: 100%;
   }
 
 .table {
       width: 100%;
   }
 
-.ticket-example {
+.code-example {
     margin: 0px 15px;
 }
 
+
+.source-link {
+    padding: 5px;
+    text-decoration: none;
+    background-color:  rgb(5, 130, 165);
+    color: white;
+    margin: 5px 10px 10px 0px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.source-link:hover {
+    background-color: #00C8FF;
+}
+
+canvas {
+    background-color: black;
+    width: 100%;
+}
 
 

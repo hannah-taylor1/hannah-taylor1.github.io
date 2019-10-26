@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/style/main.css">
+    <title>Topic 10</title>
+</head>
+
+<body>
+    <div class="wrapper">
+    <header>
+        <nav>
+            <ul>
+                <li class="logo"><a href="/home.html">CIT 261</a></li>
+                <li><a href="/home.html">Topics</a></li>
+                <li><a href="/journal.html">Journal</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Topic 10: HTML5 Tags</h2>
+        <section>
+            <div class="entry" id="videoTag">
+                <button type="button" class="collapsible">Video Tag</button>
+                <div class="journal-entry">
+                    <p>The video tag is used to place video files on the page. It accepts the MP4, WebM, and Ogg video formats. The video tag also
+                        supports multiple attributes:
+                    </p>
+                    <img src="/images/topic10-1.png" alt="list of attributes for video tag" class="table">
+                    <h4>Example</h4>
+                    <video width="100%;" controls>
+                        <source src="/images/autumn.mp4" type="video/mp4" class="video">
+                    </video><br><br>
+                    <img src="/images/topic10-2.png" alt="code for video screenshot" class="snippet">
+                    <p>This is the code used for the video above. It uses a video tag where you can place different attributes according to how you want the 
+                        video to be shown. The "controls" simply uses the browser's default buttons (play, pause, etc.) for videos. The source tag inside of the 
+                        video tag is where you source the file path for the actual video.
+                    </p>
+                    <p>If you are interested in styling the video player using CSS and JS, 
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Video_player_styling_basics" target="_blank">Mozilla Web Docs</a> 
+                        has a great resource to use.
+                    </p>
+                    <h4>Resources</h4>
+                    <div class="links">
+                        <a href=https://www.w3schools.com/tags/tag_video.asp target="_blank" class="source-link">w3schools</a>
+                        <a href=https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Video_player_styling_basics target="_blank" class="source-link">MDN web docs</a>
+                    </div><br>
+                    
+                </div>
+            </div>
+            <div class="entry" id="audioTag">
+                <button type="button" class="collapsible">Audio Tag</button>
+                <div class="journal-entry">
+                    <p>Similar to the video tag, the audio tag is used to place audio files on the page. It accepts the MP3, OGG, and WAV audio formats. The audio tag also
+                        supports multiple attributes:</p>
+                    <img src="/images/topic10-3.png" alt="list of attributes for audio tag" class="table"><br><br>
+                   <audio controls>  
+                       <source src="/images/01 Style.mp3" type="audio/mp3">
+                   </audio><br>
+                   <p>This is the code used for the audio above. It uses an audio tag where you can place different attributes according to how you want the 
+                        audio to be played. The "controls" simply uses the browser's default buttons (play, pause, etc.) for audio. The source tag inside of the 
+                        audio tag is where you source the file path for the actual audio.
+                    </p>
+                   <img src="/images/topic10-4.png" alt="code for audio screenshot" class="snippet">  
+                   <p>There is currently no way to style the audio tag using CSS. However, you can create your own control buttons using JavaScript functions.</p>
+                   <h4>Resources</h4>
+                    <div class="links">
+                        <a href=https://www.w3schools.com/tags/tag_audio.asp target="_blank" class="source-link">w3schools</a>
+                        <a href=https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio target="_blank" class="source-link">MDN web docs</a>
+                    </div><br>   
+                </div>
+            </div>
+            <div class="entry" id="canvasTag">
+                <button type="button" class="collapsible">Canvas Tag</button>
+                <div class="journal-entry">
+                    <p>The Canvas tag creates an area, or a blank canvas space, where graphics can be drawn using JavaScript. The canvas is simply the container
+                        that holds the graphics created by JavaScript. There are many things that can be drawn including shapes, paths, text, images, and even games.
+                    </p>    
+                    <p>For this topic, I have decided to follow the tutorial called "2D breakout game using pure JavaScript" located on 
+                        <a href="https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_Breakout_game_pure_JavaScript" target="_blank">MDN web docs.</a> I won't do much
+                        explaining on how it is done since it is all explained in the tutorial, but I will show the final code and the end result below.
+                        <h4>The Code</h4>
+                        <div class="code-example">
+                                <iframe width="100%" height="300" src="//jsfiddle.net/hannahtaylor/6v4xpfgd/56/embedded/js,html,css/dark/" allowfullscreen="allowfullscreen" 
+                                allowpaymentrequest frameborder="0"></iframe>
+                        </div>
+                        <h4>The Game</h4>
+                        <a href="https://jsfiddle.net/hannahtaylor/6v4xpfgd/56/" target="_blank"><img src="/images/topic10-5.png" alt="link to javascript game" class="table">
+                        <a href="https://jsfiddle.net/hannahtaylor/6v4xpfgd/56/" target="_blank">Play the Game</a>
+                        <h4>Resources</h4>
+                        <a href=https://www.w3schools.com/graphics/canvas_intro.asp target="_blank" class="source-link">w3schools</a>
+                        <a href=https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_Breakout_game_pure_JavaScript target="_blank" class="source-link">MDN web docs</a>
+                    </p>     
+                </div>
+            </div>           
+        </section>  
+    </main>
+    <footer>
+        <span>Work by Hannah Taylor | 2019</span>
+    </footer>
+    </div>
+    <script src="/script/button.js"></script>
+    <script src="/script/canvas-game.js"></script>
+</body>
+</html>

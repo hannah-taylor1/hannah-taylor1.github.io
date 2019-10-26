@@ -140,7 +140,7 @@
                         for an event. When they select their age, the corresponding price will be shown. We will say that
                         our user is 25 years old.
                     </p>
-                    <div class="ticket-example">
+                    <div class="code-example">
                         <iframe width="100%" height="300" src="//jsfiddle.net/hannahtaylor/g5a3cvkh/2/embedded/js,html,result/dark/" 
                         allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
                     </div>
@@ -159,7 +159,7 @@
                         comparison statement. We will remove the $0.00 so that it says nothing when the user enters the page.
                         Ages 0-18 will cost $25 and ages 19-100 will cost $35.
                     </p>
-                    <div class="ticket-example">
+                    <div class="code-example">
                         <iframe width="100%" height="300" src="//jsfiddle.net/hannahtaylor/db0j9ktx/embedded/js,html,result/dark/" 
                         allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
                     </div>
@@ -177,7 +177,7 @@
                     <p>It is very likely that there would be more than 2 age groups for selling tickets. We can't forget the senior citizens! So now
                         the prices will be $25 for ages 0-18, $35 for ages 19-55, and $20 for ages 56 and above.
                     </p>
-                    <div class="ticket-example">
+                    <div class="code-example">
                         <script async src="//jsfiddle.net/hannahtaylor/oyf025b7/4/embed/js,html,result/dark/"></script>
                     </div>
                     <p id="fix-overflow">This example is self explanatory, so no detailed explanation is needed. Moral of the if/if else/else if
@@ -189,31 +189,127 @@
             <div class="entry" id="functions">
                 <button type="button" class="collapsible">Functions</button>
                 <div class="journal-entry">
-                    <p>Functions</p>
+                    <p>Functions are frequently used in JavaScript to perform a certain task. A function is a block of code that 
+                        performs the task. The function will only run if it is called in another location. This is especially useful
+                        for tasks that require an action from the user first.
+                    </p>
+                    <h3>Function Syntax</h3>
+                    <img src="/images/topic1-11.png" class="snippet">
+                    <p>To define a function, you must first use the "function" keyword which is then folllowed by a unique
+                        name for the function. It is best to give a function a descriptive name. Names can use letters, numbers, underscores, 
+                        and dollar signs, but no spaces. Instead of spaces you can use camel case (thisIsAFunction).
+                    </p>
+                    <p>
+                        Following the function name, parameters will be placed in parentheses. There can be more than one parameter as long
+                        as they are seperated by commas. The actual function or code to be executed is placed inside of curly brackets.
+                    </p>
+                    <h4>Example</h4>
+                    <div class="code-example">
+                        <iframe width="100%" height="300" src="//jsfiddle.net/hannahtaylor/yuag8e9w/8/embedded/js,html,result/dark/" 
+                        allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                    </div>
+                    <br><br>
+                    
                 </div>
             </div>
             <div class="entry">
                 <button type="button" class="collapsible">Variables</button>
                 <div class="journal-entry">
-                    <p>This is where my work goes.</p>
+                    <p>Variables are where data values are held stored. To declare a variable, you first use "var" followed by the variable
+                        name, then "=" and the value to be held in the variable.
+                    </p>
+                    <h4>Example</h4>
+                    <img src="/images/topic1-12.png" class="snippet">
+                    <p>The value that will be stored in "var z= x + y" will be 5.</p>
+                    <h3>Naming Variables</h3>
+                    <p>Making sure a variable's name is precise will help in the long run. For more complex variables other than
+                        the ones in the example above, you should give them descriptive names and be consistent in the style of variable names. 
+                        The rules for naming variables are:
+                    </p>
+                    <ul>
+                        <li>Cannot contain spaces</li>
+                        <li>Must begin with a letter, underscore, or dollar sign</li>
+                        <li>Can only contain letters, underscores, or dollar signs</li>
+                        <li>Variables are case-sensitive</li>
+                        <li>Make sure your variable is not a reserved word.</li>
+                    </ul>
+
                 </div>
             </div>
             <div class="entry">
                 <button type="button" class="collapsible">Parameters</button>
                 <div class="journal-entry">
-                    <p>This is where my work goes.</p>
+                    <p>As you may have noticed earlier, parameters are used in functions to get additional information that
+                        is needed in order for the function to work. Declaring these parameters allows you to use them throughout
+                        the function's block of code. The parameters are placed in parentheses after the function name.
+                    </p>
+                    <img src="/images/topic1-11.png" class="snippet">
+                    <h4>Example</h4>
+                    <div class="code-example">
+                            <iframe width="100%" height="300" src="//jsfiddle.net/hannahtaylor/e923yjgL/21/embedded/js,result/dark/" 
+                            allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                    </div>
+                    <p>In this example, the function "greeting" has two parameters: "firstName and" "lastName". The code block within this
+                        function writes a welcome message to the user using a concatenated string and the parameter names. Below this function,
+                        the two values for the parameters are set. "firstName" is set to "Hannah" and "lastName" is set to "Taylor". The code would 
+                        then pass in these values for the parameters to write the message "Welcome, Hannah Taylor!".
+                    </p>
+                    <h4>Resources</h4>
+                    <div class="video-example">
+                        <iframe width="100%" height="300" src="https://www.youtube.com/embed/BgtdojEoWFI" frameborder="0" allow="accelerometer; autoplay; 
+                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <br>
+                    <div class="links">
+                    <a class="source-link" href="https://www.w3schools.com/js/js_function_parameters.asp" target="_blank">w3schools</a>
+                    </div>
+                    <br><br><br>
+
                 </div>
             </div>
             <div class="entry">
                 <button type="button" class="collapsible">Arrays</button>
                 <div class="journal-entry">
-                    <p>This is where my work goes.</p>
+                    <p>Arrays allow you to store more than one value witin a variable. The best use of an array is for when you have a list of items.
+                        This simplifies the code by allowing you to store the entire list, no matter how big, into one variable.
+                    </p>
+                    <img src="/images/topic1-13.png" class="snippet">
+                    <p>
+                        To access an item within an array, you use its index number. The index number tells what place the item is. To count the index number,
+                        you always need to start at 0. For example, if I have an array of 3 items "apples", "oranges", "bananas", the index count will be "0", "1", "2".
+                    </p>
+                    <h4>Example</h4>
+                    <div class="code-example">
+                            <iframe width="100%" height="300" src="//jsfiddle.net/hannahtaylor/245oujeb/11/embedded/js,html,result/dark/" allowfullscreen="allowfullscreen" 
+                            allowpaymentrequest frameborder="0"></iframe>
+                    </div>
+                    <p>In this example, an array called "names" with 5 items is created. First, it selects the 4th name from the array using the index number 3. It also 
+                        selects all items in the list by simply calling the name of the array.
+                    </p>
+
                 </div>
             </div>
             <div class="entry">
                 <button type="button" class="collapsible">Associative Arrays</button>
                 <div class="journal-entry">
-                    <p>This is where my work goes.</p>
+                    <p>The associative array is somewhat confusing at first. I have read in some places that associative arrays are not supported in JavaScript, and some resources that say
+                        they are just objects. 
+                    </p>    
+                    <p>The clearest definition that I found was on 
+                        <a href="https://www.i-programmer.info/programming/javascript/1441-javascript-data-structures-the-associative-array.html" target="_blank"> this website</a> which says
+                        that "every JavaScript object is an associative array...An associative array is simply a set of key value pairs. The value is stored in association with its
+                        key and if you provide the key the array will return the value."
+                    </p>
+                    <h3>Arrays and Objects</h3>
+                    <p>According to w3schools, "In JavaScript, arrays use numbered indexes" and "objects use named indexes."</p>
+                    <h4>Example</h4>
+                    <p>An associative array could be used to store a list of student ID's. It would store the student name with their associated ID number.</p>
+                    <div class="code-example">
+                            <iframe width="100%" height="300" src="//jsfiddle.net/hannahtaylor/uv6zd0tL/28/embedded/js,result/dark/" allowfullscreen="allowfullscreen" 
+                            allowpaymentrequest frameborder="0"></iframe>
+                    </div>
+                    <p>An object called "studentId" was created. Inside of this object is a list of names associated with their student ID. When you click on Result in the JSFiddle, 
+                        an alert pops up and displays the value stored in the key "jill".</p>
                 </div>
             </div>            
         </section>  
