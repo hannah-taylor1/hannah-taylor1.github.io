@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/style/main.css">
+    <title>Topic 11</title>
+</head>
+
+<body>
+    <div class="wrapper">
+    <header>
+        <nav>
+            <ul>
+                <li class="logo"><a href="/home.html">CIT 261</a></li>
+                <li><a href="/home.html">Topics</a></li>
+                <li><a href="/journal.html">Journal</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Topic 11: CSS Transitions</h2>
+        <section>
+            <div class="entry" id="videoTag">
+                <button type="button" class="collapsible">Defining Transitions</button>
+                <div class="journal-entry">
+                    <p> Transitions allow you to add subtle changes to elements over a specific duration of time. There are 5 transition properties: 
+                        transition-delay, transition-duration, transition-property, transition-timing-function, and transition.   
+                    </p>
+                    <img src="/images/topic11-1.png" alt="transition properties table" class="table">
+                    <p> Transition is a property that can be used as a shorthand property for all other properties.
+                    </p>
+                    <img src="/images/topic11-2.png" alt="transition property example" class="snippet">
+                    <h4>Example</h4>
+                    <div class="code-example">
+                            <iframe width="100%" height="300" src="//jsfiddle.net/hannahtaylor/963uodv8/7/embedded/css,result/dark/" allowfullscreen="allowfullscreen" 
+                            allowpaymentrequest frameborder="0"></iframe>
+                    </div>
+                    <p>In this example, the "transition" property has been used. The "all" refers to which properties will transition (all of them), 0.5s is the transition-duration, and
+                        "ease" is the transition-timing-function or the speed curve. Ease has a slow start, then fast, then end slowly. 
+                    </p>
+                    <h4>Resources</h4>
+                    <div class="links">
+                        <a href=https://www.w3schools.com/css/css3_transitions.asp target="_blank" class="source-link">w3schools</a>
+                        <a href=https://css-tricks.com/almanac/properties/t/transition/ target="_blank" class="source-link">CSS Tricks</a>
+                    </div><br>
+                    
+                </div>
+            </div>
+                     
+        </section>  
+    </main>
+    <footer>
+        <span>Work by Hannah Taylor | 2019</span>
+    </footer>
+    </div>
+    <script src="/script/button.js"></script>
+    <script src="/script/canvas-game.js"></script>
+</body>
+</html>
