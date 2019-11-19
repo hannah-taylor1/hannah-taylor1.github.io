@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/style/main.css">
+    <title>Topic 3</title>
+</head>
+
+<body>
+    <div class="wrapper">
+    <header>
+        <nav>
+            <ul>
+                <li class="logo"><a href="/home.html">CIT 261</a></li>
+                <li><a href="/home.html">Topics</a></li>
+                <li><a href="/journal.html">Journal</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Topic 3: JSON</h2>
+        <section>
+            <div class="entry">
+                    <button type="button" class="collapsible">JSON</button>
+                    <div class="journal-entry">
+                        <h3>What is an JSON?</h3> 
+                        <p>JSON stands for JavaScript Object Notation. It is a way to store information and exchange information by using a syntax. That syntax is JSON. It is simply text. Data can only be text when it is exchanged between the browser and server. This means that you have a way to store complex objects with properties and objects inside of those objects. You can also access those objects through JavaScript. </p>
+                        <p>For example, if you had a website that listed different games and the information about each game, you could store it in a JSON file. Every time you need to display that information, you can use JavaScript to display on the page to the user.</p>
+                        <h3>JSON Syntax</h3>
+                        <p>JSON is written in text. It uses a name/value pair to write the data. Curly braces contain the name/value pairs, as an object. The name is written in double quotes then a colon, then the value. Each name/value pair proceeds with a comma unless it is the last in the curly brackets.</p>
+                        <img src="/images/topic3-1.png" alt="JSON Syntax" class="snippet">
+                        <p>I highly recommend watching the following two videos by The Coding Train from YouTube. He does an excellent job explaining new concepts. He is entertaining but also serious and passionate about the work he does. I like that I can feel like I'm getting a lecture on campus.</p>
+                        <h4>Resources</h4>
+                        <div class="video-example">
+                            <iframe width="100%" height="300" src="https://www.youtube.com/embed/_NFkzw6oFtQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-example">
+                            <iframe width="100%" height="300" src="https://www.youtube.com/embed/118sDpLOClw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <br>
+                        <div class="links">
+                            <a class="source-link" href="https://www.w3schools.com/js/js_json_intro.asp" target="_blank">w3schools</a>
+                        </div>
+                        <br><br>
+                            
+                    </div>
+                </div>
+            <div class="entry">
+                <button type="button" class="collapsible">Parse</button>
+                <div class="journal-entry">
+                    <p>The JavaScript function JSON.parse() allows you to take text received from a JSON file or some web server and convert it into an object, written in JavaScript syntax.</p>
+                    <h4>Example</h4>
+                    <p>For this demonstration, I will simply enter JSON text as a string into my JavaScript file, then parse it to make an object. I can then use this object to output whatever data I need.</p>
+                    <div class="code-example">
+                        <iframe width="100%" height="300" src="//jsfiddle.net/hannahtaylor/3kpmrodj/25/embedded/js,html,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                    </div>
+                    <h4>Resources</h4>
+                    <div class="links">
+                        <a class="source-link" href="https://www.w3schools.com/js/js_json_parse.asp" target="_blank">w3schools</a>
+                    </div>
+                    <br><br>
+                    
+                </div>
+            </div>
+            <div class="entry">
+                <button type="button" class="collapsible">Stringify</button>
+                <div class="journal-entry">
+                    <p>The JSON.stringify() function is basically the opposite of parsing. It takes a JavaScript object and converts it into a string in JSON syntax. This could be useful when you need to add an object into the JSON file. In order to do this, it has to be a string.</p>
+                    <h4>Example</h4>
+                    <p>Using the same example from before, I will create a new object in Javascript, then use Stringify to convert it to text.</p>
+                    <div class="code-example">
+                        <iframe width="100%" height="300" src="//jsfiddle.net/hannahtaylor/5w30mz4y/2/embedded/js,html,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                    </div>
+                    <h4>Resources</h4>
+                    <div class="links">
+                        <a class="source-link" href="https://www.w3schools.com/js/js_json_stringify.asp">w3schools</a>
+                    </div>
+                    <br><br>
+                </div>
+            </div>
+ 
+            <div class="entry">
+                    <button type="button" class="collapsible">Teaching Video</button>
+                    <div class="journal-entry">
+                        <br>
+                        <a href="https://byui.zoom.us/recording/play/9_eU-7bhskIAFGMgKxdyKGFUr2aWpZw67GO2p76TZl3rqLoRkKHyld58ErPW-YIQ?continueMode=true
+                        " target="_blank">Teaching Video</a>
+                        <p>My teaching presentation starts at 7:30 and ends at 12:10.
+                        </p>     
+                    </div>
+            </div>                        
+        </section>  
+    </main>
+    <footer>
+        <span>Work by Hannah Taylor | 2019</span>
+    </footer>
+    </div>
+    <script src="/script/button.js"></script>
+</body>
+</html>

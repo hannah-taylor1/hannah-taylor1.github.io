@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/style/main.css">
+    <title>Topic 2</title>
+</head>
+
+<body>
+    <div class="wrapper">
+    <header>
+        <nav>
+            <ul>
+                <li class="logo"><a href="/home.html">CIT 261</a></li>
+                <li><a href="/home.html">Topics</a></li>
+                <li><a href="/journal.html">Journal</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Topic 2: Javascript Object Creation</h2>
+        <section>
+            <div class="entry">
+                    <button type="button" class="collapsible">Object Creation</button>
+                    <div class="journal-entry">
+                        <h3>What is an Object?</h3> 
+                        <p>As <a href="https://www.w3schools.com/js/js_object_definition.asp" target="_blank">W3Schools</a> puts it, "In JavaScript, objects are king. If you understand objects, you understand JavaScript."</p>  <p>Almost everything including functions, arrays, dates, maths, and regular expressions can be objects. Booleans, numbers, and strings can also be objects as long as they contain the "new" keyword.</p>
+                        <p>Objects are also variables, however an object can contain more than one values by using a name:value pair.</p>
+                        <h4>Example</h4>
+                        <p>In this example, I will create an object called "cube" that contains its length, width, and height in inches. This example creates an object literal which means that the object's contents are written out.</p>
+                        <div class="code-example">
+                            <iframe width="100%" height="300" src="//jsfiddle.net/hannahtaylor/by1zq4r6/3/embedded/js/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                        </div>
+                        <p>The object is created by giving it a name, "cube" and placing all of its values inside the curly brackets. Each value has a name (length, width, and height) with its own value. The advantage of creating an object here is that it provides organization, instead of having hard to identify variables. It also makes it easier to create multiple cube objects if needed.</p> 
+                        <h4>Resources</h4>
+                        <div class="video-example">
+                            <iframe width="100%" height="300" src="https://www.youtube.com/embed/-e5h4IGKZRY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <br>
+                        <div class="links">
+                            <a class="source-link" href="https://www.w3schools.com/js/js_object_definition.asp" target="_blank">w3schools</a>
+                        </div>
+                        <br><br>
+                            
+                    </div>
+                </div>
+            <div class="entry">
+                <button type="button" class="collapsible">Properties</button>
+                <div class="journal-entry">
+                    <img src="https://www.learningresources.co.uk/media/catalog/product/cache/5928e112830e542696586a0d661d5090/0/9/0927-base10cube_2_sh-1.jpg" alt="blue cube" class="table">
+                    <p>This is an image of a cube. It is a real life object that can be defined by its properties. Properties are just descriptions of an object. This cube has several properties including:</p>
+                    <ul>
+                        <li>Color: blue</li>
+                        <li>Length: 10cm</li>
+                        <li>Width: 10cm</li>
+                        <li>Height: 10cm</li>
+                        <li>Material: plastic</li>
+                    </ul>
+                    <p>This could be shown as an object in JavaScript like this:</p>
+                    <div class="code-example">
+                            <iframe width="100%" height="300" src="//jsfiddle.net/hannahtaylor/by1zq4r6/7/embedded/js/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                        </div>
+                        <p>Each property has a name and a value stored as a string or a number.</p>
+                        <h3>Accessing Object Properties</h3>
+                        <p>If needed, you can access your property like this:</p>
+                        <h5 class="code-text">objectName.propertyName</h5>
+                        <p>Or like this:</p>
+                        <h5 class="code-text">objectName["propertyName"]</h5>
+                        <h4>Example</h4>
+                        <p>If I wanted to display the cube's color and material, I could do this:</p>
+                        <div class="code-example">
+                            <iframe width="100%" height="300" src="//jsfiddle.net/hannahtaylor/by1zq4r6/13/embedded/js,html,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                        </div>
+                    <h4>Resources</h4>
+                    <div class="links">
+                        <a class="source-link" href="https://www.w3schools.com/js/js_objects.asp" target="_blank">w3schools</a>
+                        <a class="source-link" href="https://www.learningresources.co.uk/media/catalog/product/cache/5928e112830e542696586a0d661d5090/0/9/0927-base10cube_2_sh-1.jpg" target="_blank">Image</a>
+                    </div>
+                    <br><br>
+                    
+                </div>
+            </div>
+            <div class="entry">
+                <button type="button" class="collapsible">Methods</button>
+                <div class="journal-entry">
+                    <p>From <a href="https://www.w3schools.com/js/js_object_methods.asp" target="_blank">W3Schools:</a> "JavaScript methods are actions that can be performed on objects." A function is used to perform this action. To access the object method you would use:</p>
+                    <h5 class="code-text">objectName.methodName();</h5>
+                    <p>To access the function definition, you would use:</p>
+                    <h5 class="code-text">objectName.methodName;</h5>
+                    <h4>Example</h4>
+                    <p>Let's say we wanted to find the volume of the cube, which is also a property of the cube. We would use an object method to get the volume and define it as a property. The formula for the volume of a cube is length * width * height.</p>
+                    <div class="code-example">
+                        <iframe width="100%" height="300" src="//jsfiddle.net/hannahtaylor/by1zq4r6/21/embedded/js,html,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                    </div>
+                    <p>Inside of the function, the word "this" is used before accessing the property needed. For example "this.length". The "this" is referring to the object "cube" where the property "length" resides.</p>
+                    <h4>Resources</h4>
+                    <div class="links">
+                        <a class="source-link" href="https://www.w3schools.com/js/js_objects.asp" target="_blank">w3schools</a>
+                    </div>
+                    <br><br>
+                </div>
+            </div>
+            <div class="entry">
+                <button type="button" class="collapsible">Functions</button>
+                <div class="journal-entry">
+                    <p>Functions are javaScript objects. They are classified as first-class objects, which just means that they have properties and methods. Functions differ from other objects because they are able to be called elsewhere. This is useful when you need to call a function from a different object.</p>
+                    <p>As shown in the previous example, you can also create functions inside of objects. You can do this by using a name and assigning the value as a function.</p>
+                    <h4>Resources</h4>
+                    <div class="video-example">
+                        <iframe width="100%" height="300" src="https://www.youtube.com/embed/QoFWCPVpWUE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <br>
+                    <div class="links">
+                    <a class="source-link" href="https://www.w3schools.com/js/js_function_parameters.asp" target="_blank">w3schools</a>
+                    <a class="source-link" href="https://www.dofactory.com/tutorial/javascript-function-objects" target="_blank">Function Objects</a>
+                    </div>
+                    <br><br>
+
+                </div>
+            </div>            
+            <div class="entry">
+                <button type="button" class="collapsible">Instantiation</button>
+                <div class="journal-entry">
+                    <p>Instantiation is the process of creating an object instance from a class. You can use a constructor function that serves as kind of a framework to use to create instances of new objects.
+                    </p>
+                    <p>An example of this is best shown by this diagram from <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS" target="_blank">MDN Web Docs</a> that creates a short bio of people. The first rectangle is like a model or template of the object. The following two rectangles take this model and create two unique objects or instances of the class.</p>
+                    <img src="/images/topic2-2.png" alt="instantiation example" class="snippet">    
+                    <p>Here is how Instantiation looks in JavaScript:</p>
+                    <h4>Example</h4>
+                        <div class="code-example">
+                            <iframe width="100%" height="300" src="//jsfiddle.net/hannahtaylor/po35agtL/13/embedded/js,html,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                        </div>
+                    <p>First, you create a model of the object. This is called the constructor. Then you create a new instance of that object. Finally, you call that new object's name, and call the greeting function to display a message. You could continue creating objects for each new person.</p>
+                    <h4>Resources</h4>    
+                    <div class="links">
+                        <a class="source-link" href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS" target="_blank">MDN Web Docs</a>
+                    </div>
+                    <br><br><br> 
+                </div>
+            </div>
+            <div class="entry">
+                <button type="button" class="collapsible">Inheritance</button>
+                <div class="journal-entry">
+                     <p>Now that we know how to create a constructor and instances of an object, we can take it a step further and create child classes for those constructors. In the Person example from the previous section, we can further categorize people into two child classes (constructors).</p>
+                     <img src="/images/topic2-3.png" alt="inheritance chart" class="snippet">
+                     <p>This diagram shows a teacher class and a student class being inherited by the Person class. Both Teachers and Students inherit all of the properties of the "Person", the only difference is the type of greeting and that the Teacher now has a property for the subject that they teach.</p>
+                     <p>Here is how inheritance looks with JavaScript:</p>
+                     <h4>Example</h4>
+                     <div class="code-example">
+                        <iframe width="100%" height="300" src="//jsfiddle.net/hannahtaylor/q6c3drfv/6/embedded/js/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                     </div>   
+                    <h4>Resources</h4>
+                    <div class="links">
+                        <a class="source-link" href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS" target="_blank">MDN OOP</a>
+                        <a class="source-link" href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance" target="_blank">MDN Inheritance</a>
+                        </div>
+                        <br><br>
+                    </div>
+                </div>
+            <div class="entry">
+                    <button type="button" class="collapsible">Teaching Video</button>
+                    <div class="journal-entry">
+                        <br>
+                        <a href="https://byui.zoom.us/recording/play/9_eU-7bhskIAFGMgKxdyKGFUr2aWpZw67GO2p76TZl3rqLoRkKHyld58ErPW-YIQ?continueMode=true
+                        " target="_blank">Teaching Video</a>
+                        <p>My teaching presentation starts at 0:00 and ends at 7:30.
+                        </p>             
+                    </div>
+            </div>                        
+        </section>  
+    </main>
+    <footer>
+        <span>Work by Hannah Taylor | 2019</span>
+    </footer>
+    </div>
+    <script src="/script/button.js"></script>
+</body>
+</html>

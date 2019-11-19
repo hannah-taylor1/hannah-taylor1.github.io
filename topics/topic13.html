@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/style/main.css">
+    <title>Topic 13</title>
+</head>
+
+<body>
+    <div class="wrapper">
+    <header>
+        <nav>
+            <ul>
+                <li class="logo"><a href="/home.html">CIT 261</a></li>
+                <li><a href="/home.html">Topics</a></li>
+                <li><a href="/journal.html">Journal</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Topic 13: CSS Animations</h2>
+        <section>
+            <div class="entry" id="definingAnimations">
+                <button type="button" class="collapsible">Defining Animations</button>
+                <div class="journal-entry">
+                    <p>Animations allow you to gradually change certain elements without using any JavaScript. This means that you can make objects bounce, slide, focus, blur, etc. To understand just how much CSS Animations can do, I suggest visiting <a href="http://animista.net/play/text/focus-in" target="_blank">this website</a>, called Animista, which allows you to play around with different animations and provides you with the source code.
+                    </p>
+                    <p>These are the different property values for animations:</p>
+                    <img src="/images/topic13-1.png" alt="animation properties table" class="table">
+                    <br><br>
+                    <div class="code-example">
+                        <iframe width="100%" height="300" src="//jsfiddle.net/hannahtaylor/0ae5cskr/62/embedded/html,css,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                    </div>
+                    <h4>Resources</h4>
+                    <div class="links">
+                        <a href="https://www.w3schools.com/css/css3_animations.asp" target="_blank" class="source-link">W3Schools</a>
+                    </div><br>
+                </div>
+            </div>
+            <div class="entry" id="cssTransforms">
+                <button type="button" class="collapsible">Triggering Animations</button>
+                <div class="journal-entry">
+                    <p> To trigger animations, you would set an @keyframes that defines what you want to occur within the period of time specified in the element that will be animated. Within that element you also need to give the animation a name which will then be used to call the animation.
+                    </p>
+                    <p>The example in the previous section has 4 boxes. For box 1, I wanted it to spin continuously. So, in my CSS file, I referred to the class .box1 and gave the animation a name (rotation), duration, timing function, and repetition count. Above this, I created an @keyframes that told it to rotate the box 260 degrees the entire duration. Each box has a different animation so I had to create separate keyframes for each animation.</p>
+                    <h4>Resources</h4>
+                    <div class="links">
+                        <a href="https://www.w3schools.com/css/css3_animations.asp" target="_blank" class="source-link">W3Schools</a>
+                    </div><br>  
+                </div>
+            </div>
+            <div class="entry">
+                <button type="button" class="collapsible">Teaching Video</button>
+                <div class="journal-entry">
+                    <br>
+                    <a href="https://byui.zoom.us/recording/play/gDA0i6tjqDY_kbGnn6P1vzWEbscMWIHh9uDUFsQtisHr2HZ2B66-hCXkgBcafHo-?continueMode=true" target="_blank">Week 7 Teaching Video</a>
+                    <p>My teaching presentation starts at 0:00 and ends at 11:26.
+                    </p>       
+                </div>
+            </div>                   
+        </section>  
+    </main>
+    <footer>
+        <span>Work by Hannah Taylor | 2019</span>
+    </footer>
+    </div>
+    <script src="/script/button.js"></script>
+    <script src="/script/canvas-game.js"></script>
+</body>
+</html>
