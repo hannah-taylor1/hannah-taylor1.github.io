@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/style/main.css">
+    <title>Topic 6</title>
+</head>
+
+<body>
+    <div class="wrapper">
+    <header>
+        <nav>
+            <ul>
+                <li class="logo"><a href="/home.html">CIT 261</a></li>
+                <li><a href="/home.html">Topics</a></li>
+                <li><a href="/journal.html">Journal</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Topic 6: DOM Manipulation</h2>
+        <section>
+            <div class="entry">
+                <button type="button" class="collapsible">DOM</button>
+                <div class="journal-entry">
+                    <h3>What is DOM?</h3>
+                    <p>DOM stands for Document Object Model. After the HTML page is loaded, the browser will create something called a Document Object Model of the page. This is what an example HTML DOM Tree of Objects looks like:</p>
+                    <img src="/images/topic6-1.png" alt="HTML DOM Tree of Objects Diagram" class="table">
+                    <p>Within this model, it shows the document as the head element, then everything within html is the root element. This is further divided into the head element and the body element. Then each element inside of these tags is broken down. </p> 
+                    <p>By creating this object model, you can access any individual object using JavaScript to create, read, update, or delete elements and attributes within the HTML file. This becomes extremely useful when you want to make a static HTML page more dynamic.</p>
+                    <p>I will explore some of the things you can do to manipulate HTML using JavaScript in the next few sections. Topic 7 shows how to use JavaScript to manipulate CSS class properties.</p>
+                    <h4>Resources</h4>
+                    <div class="links">
+                        <a href="https://www.w3schools.com/js/js_htmldom.asp" target="_blank" class="source-link">W3Schools</a>
+                    </div><br><br>  
+                </div>
+            </div>
+            <div class="entry">
+                <button type="button" class="collapsible">createElement()</button>
+                <div class="journal-entry">
+                    <p>The createElement() method does exactly what it describes. It can create a new HTML element to insert into the page.</p>
+                    <h4>Example</h4>
+                    <p>In this example, when the button is pressed, an image will appear.</p>
+                    <div class="code-example">
+                        <iframe width="100%" height="300" src="//jsfiddle.net/hannahtaylor/d3m124yz/12/embedded/js,html,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                    </div>
+                    <h4>Resources</h4>
+                    <div class="links">
+                        <a href="https://www.w3schools.com/jsref/met_document_createelement.asp" target="_blank" class="source-link">W3Schools</a>
+                    </div><br>
+                </div>
+            </div>
+            <div class="entry">
+                <button type="button" class="collapsible">appendChild()</button>
+                <div class="journal-entry">
+                    <p>The appendChild() method appends or attaches a specified element to the last child. In the previous example, I appended the picture of the dog to the body which means that it will be placed at the end of the document. For this example I will do something a little different and append an element to something with an ID.</p>
+                    <h4>Example</h4>
+                    <p>In this example I will create a button that triggers a function which will append a figCaption to the figure.</p>
+                    <div class="code-example">
+                        <iframe width="100%" height="300" src="//jsfiddle.net/hannahtaylor/gb0zdmen/33/embedded/js,html,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                    </div>
+                    <h4>Resources</h4>
+                    <div class="links">
+                        <a href="https://www.w3schools.com/jsref/met_node_appendchild.asp" target="_blank" class="source-link">W3Schools</a>
+                    </div><br>
+                </div>
+            </div>
+            <div class="entry">
+                <button type="button" class="collapsible">removeChild()</button>
+                <div class="journal-entry">
+                    <p>The removeChild method will remove a specific child node which can be determined by the index number.</p>
+                    <h4>Example</h4>
+                    <p>In this example, when the button is pressed, an item in the list will disappear.</p>
+                    <div class="code-example">
+                        <iframe width="100%" height="300" src="//jsfiddle.net/hannahtaylor/b5q4n3r8/6/embedded/js,html,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                    </div>
+                    <p>It is important to note that all of the items of the unordered list are placed on the same line with no whitespace in between each item. This is because the white space will be counted as a child node which doesn't agree with the index count of the list.</p>
+                    <h4>Resources</h4>
+                    <div class="links">
+                        <a href="https://www.w3schools.com/jsref/met_node_removechild.asp" target="_blank" class="source-link">W3Schools</a>
+                    </div><br>
+                </div>
+            </div>
+            <div class="entry">
+                <button type="button" class="collapsible">Teaching Video</button>
+                    <div class="journal-entry">
+                        <p>Coming Soon...
+                        </p>       
+                    </div>
+            </div>                                
+        </section>  
+    </main>
+    <footer>
+        <span>Work by Hannah Taylor | 2019</span>
+    </footer>
+    </div>
+    <script src="/script/button.js"></script>
+</body>
+</html>
