@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/style/main.css">
+    <title>Topic 5</title>
+</head>
+
+<body>
+    <div class="wrapper">
+    <header>
+        <nav>
+            <ul>
+                <li class="logo"><a href="/home.html">CIT 261</a></li>
+                <li><a href="/home.html">Topics</a></li>
+                <li><a href="/journal.html">Journal</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Topic 5: Local Storage</h2>
+        <section>
+            <div class="entry">
+                <button type="button" class="collapsible">Local Storage</button>
+                <div class="journal-entry">
+                    <p>Local Storage is a way to store and receive data in the browser and it has no expiration date. This is unlike session storage, which will expire when the user leaves the website. Local storage accepts a name/value pair which is stored by the browser infinitely unless the developer removes the data through JavaScript or the user removes the data through their browser.</p>
+                    <p>Local Storage in JavaScript is useful because it can do things like store user preferences (background color, dark mode, etc.) so that they are available the next time they visit the website. It could also keep items available like items in a shopping cart or a list of liked items. </p>
+                    <h4>Resources</h4>
+                    <div class="links">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage" target="_blank" class="source-link">MDN Web Docs</a>
+                        <a href="https://blog.logrocket.com/the-complete-guide-to-using-localstorage-in-javascript-apps-ba44edb53a36/" target="_blank" class="source-link">LocalStorage in JavaScript</a>
+                    </div><br><br>  
+                </div>
+            </div>
+            <div class="entry">
+                <button type="button" class="collapsible">Storing Data</button>
+                <div class="journal-entry">
+                    <p>To store data locally, you would use: </p>
+                    <h5 class="code-text">localStorage.setItem('name', 'value');</h5>
+                    <h3>Store a Simple Item</h3>
+                    <p>In this example, I will use input boxes to store a simple name/value pair. You can test it out by entering your own data and viewing it in the console.</p>
+                    <fieldset name="dataForm" id="dataForm">
+                        <legend>Enter Data</legend>
+                        <input id="dataName" type="text" placeholder="Enter a name...">
+                        <input id="dataValue" type="text" placeholder="Enter a value...">
+                        <button type="button" id="dataBtn">Store Data</button>
+                    </fieldset>
+                    <h4>The Code</h4>
+                    <div class="code-example">
+                        <iframe width="100%" height="300" src="//jsfiddle.net/hannahtaylor/edhtuL6x/16/embedded/js,html/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                    </div>
+                    <p>When you type in a name/value pair in the input boxes, they are stored locally. You can view them by pressing F12, then selecting console. Once you are in the console, you will notice that the most recent input is displayed. You can view all local data that is stored on this specific page by typing localStorage in the console. Any values that are changed will be replaced with the most recent entry.</p>
+                    <h3>Store an Array or Object</h3>
+                    <p>localStorage can only handle strings so if you were to enter a more complex object or an array, it would store it as a string. You can work around this by using JSON.stringify. The example below came from <a src="https://stackoverflow.com/questions/2010892/storing-objects-in-html5-localstorage">Stack Overflow</a> in the first answer by the user CMS.</p>
+                    <div class="code-example">
+                        <iframe width="100%" height="300" src="//jsfiddle.net/hannahtaylor/gxac6vt7/embedded/js/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                    </div>
+                    <h4>Resources</h4>
+                    <div class="video-example">
+                        <iframe width="100%" height="300" src="https://www.youtube.com/embed/k8yJCeuP6I8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+                    </div>
+                    <div class="links">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage" target="_blank" class="source-link">MDN Web Docs</a>
+                    </div><br><br>  
+                </div>
+            </div>
+            <div class="entry">
+                <button type="button" class="collapsible">Retrieving Data</button>
+                <div class="journal-entry">
+                    <p>To retrieve data from local storage, you would use:</p>
+                    <h5 class="code-text">localStorage.getItem('name');</h5>
+                    <h3>Retrieve a Simple Item</h3>
+                    <p>I will use the previous example to demonstrate the get item method. You should see the entries from the previous input boxes in the local storage box.</p>
+                    <fieldset>
+                        <legend>Local Storage</legend>
+                        <div id="dataOutput"></div>
+                    </fieldset>
+                    <h4>The Code</h4>
+                    <div class="code-example">
+                        <iframe width="100%" height="300" src="//jsfiddle.net/hannahtaylor/edhtuL6x/17/embedded/js,html/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                    </div>
+                    <h3>Retrieve an Array or Object</h3>
+                    <p>As mentioned previously, localStorage can only handle strings so you would need to use JSON.parse() to convert the string to a JavaScript object to use wherever it is needed. The example below came from <a src="https://stackoverflow.com/questions/2010892/storing-objects-in-html5-localstorage">Stack Overflow</a> in the first answer by the user CMS.</p>
+                    <div class="code-example">
+                        <iframe width="100%" height="300" src="//jsfiddle.net/hannahtaylor/gxac6vt7/embedded/js/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                    </div>
+                    <h4>Resources</h4>
+                    <div class="links">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API" target="_blank" class="source-link">MDN web docs</a>
+                    </div><br><br>  
+                </div>
+            </div>
+            <div class="entry">
+                <button type="button" class="collapsible">Teaching Video</button>
+                    <div class="journal-entry">
+                            <p><a href="https://screencast-o-matic.com/watch/cqlerYUJbk" target="_blank">This is my teaching video. </a>It begins at 5:40 and ends at 11:31.</p>      
+                    </div>
+            </div>                                
+        </section>  
+    </main>
+    <footer>
+        <span>Work by Hannah Taylor | 2019</span>
+    </footer>
+    </div>
+    <script src="/script/button.js"></script>
+    <script src="/script/localStorage.js"></script>
+</body>
+</html>

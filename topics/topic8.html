@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/style/main.css">
+    <title>Topic 8</title>
+</head>
+
+<body>
+    <div class="wrapper">
+    <header>
+        <nav>
+            <ul>
+                <li class="logo"><a href="/home.html">CIT 261</a></li>
+                <li><a href="/home.html">Topics</a></li>
+                <li><a href="/journal.html">Journal</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Topic 8: Triggering CSS Transitions and Animations with JavaScript</h2>
+        <section>
+            <div class="entry">
+                <button type="button" class="collapsible">Transitions and Animations</button>
+                <div class="journal-entry">
+                    <p>CSS transitions allow you to make subtle changes to elements and animations allow you to gradually change the appearance of an element. This topic covers how to trigger transitions and animations. For a more in depth understanding of how to use CSS transitions, see <a href="topic11.html">Topic 11</a>. For a more in depth understanding of how to use CSS animations, see <a href="topic13.html">Topic 13</a></p>
+                    <p>With pure CSS and HTML, there are only a small number of methods that can be used to trigger transitions and animations. By using JavaScript, you are able to trigger transitions and animations in several ways by using JavaScript events. You can use events such as onclick to trigger whatever transition/animation you need. You also have the flexibility of altering the style of an element with JavaScript when an event takes place.</p>
+                    <p>Here are a couple of examples of how to trigger CSS transitions and animations using JavaScript:</p>
+                    <h4>Examples</h4>
+                    <p>The first 3 examples show how you can trigger transitions with JavaScript using the events onmouseover, onmouseout, and onclick. The stars simply change color with a nice transition when these events take place.</p>
+                    <div class="code-example">
+                        <iframe width="100%" height="300" src="//jsfiddle.net/hannahtaylor/ztug9kp7/74/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                    </div>
+                    <p>This last example uses onclick to show and hide a dropdown menu. When the hamburger menu is clicked, the animation to fade in the menu is triggered. When the x is clicked to close the menu, the hamburger icon fades in.</p>
+                    <div class="code-example">
+                        <iframe width="100%" height="300" src="//jsfiddle.net/hannahtaylor/k5azg6rj/75/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                    </div>
+                    <h4>Resources</h4>
+                    <div class="video-example">
+                        <iframe width="100%" height="300" src="https://www.youtube.com/embed/hA-fYOlLXPQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div><br>
+                    <div class="links">
+                        <a href="https://css-tricks.com/controlling-css-animations-transitions-javascript/" target="_blank" class="source-link">CSS Tricks</a>
+                    </div><br><br>
+                </div>
+            </div>
+            <div class="entry">
+                <button type="button" class="collapsible">Teaching Video</button>
+                    <div class="journal-entry">
+                        <p><a href="https://screencast-o-matic.com/watch/cqlerHUJrf" target="_blank">This is my teaching video. </a>It begins at 5:25 and ends at 10:28.</p>
+                    </div>
+            </div>                                
+        </section>  
+    </main>
+    <footer>
+        <span>Work by Hannah Taylor | 2019</span>
+    </footer>
+    </div>
+    <script src="/script/button.js"></script>
+</body>
+</html>

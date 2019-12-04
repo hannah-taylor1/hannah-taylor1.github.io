@@ -20,63 +20,48 @@
         </nav>
     </header>
     <main>
-        <h2>Topic 4: AJAX</h2>
+        <h2>Topic 4: Using XMLHTTP Request to consume a JSON Service</h2>
         <section>
             <div class="entry">
-                    <button type="button" class="collapsible">AJAX</button>
-                    <div class="journal-entry">
-                        <h3>What is AJAX?</h3> 
-                        <p>AJAX stands for Asynchronous JavaScript And XML. It is a way to access web servers for data. It allows the data to constantly update without having to reload or edit the web page.</p>
-                        <h4>Resources</h4>
-                        <div class="links">
-                            <a class="source-link" href="https://www.w3schools.com/whatis/whatis_ajax.asp" target="_blank">w3schools</a>
-                        </div>
-                        <br><br>
-                            
-                    </div>
-                </div>
-            <div class="entry">
-                <button type="button" class="collapsible">Parse</button>
+                <button type="button" class="collapsible">AJAX</button>
                 <div class="journal-entry">
-                    <p>The JavaScript function JSON.parse() allows you to take text received from a JSON file or some web server and convert it into an object, written in JavaScript syntax.</p>
-                    <h4>Example</h4>
-                    <p>For this demonstration, I will simply enter JSON text as a string into my JavaScript file, then parse it to make an object. I can then use this object to output whatever data I need.</p>
-                    <div class="code-example">
-                        <iframe width="100%" height="300" src="//jsfiddle.net/hannahtaylor/3kpmrodj/25/embedded/js,html,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-                    </div>
+                    <h4>What is AJAX?</h4>
+                    <p>AJAX is an acronym for Asynchronous JavaScript And XML. It uses XMLhttpRequest, which is built into the browser to get data from a web server such as an API. The following diagram from W3schools shows how AJAX works.</p>
+                    <img src="/images/topic4-1.png" alt="AJAX diagram" class="table">
                     <h4>Resources</h4>
                     <div class="links">
-                        <a class="source-link" href="https://www.w3schools.com/js/js_json_parse.asp" target="_blank">w3schools</a>
-                    </div>
-                    <br><br>
-                    
+                        <a href="https://www.w3schools.com/js/js_ajax_intro.asp" target="_blank" class="source-link">W3Schools</a>
+                    </div><br>
                 </div>
             </div>
             <div class="entry">
-                <button type="button" class="collapsible">Stringify</button>
+                <button type="button" class="collapsible">XMLHttpRequest()</button>
                 <div class="journal-entry">
-                    <p>The JSON.stringify() function is basically the opposite of parsing. It takes a JavaScript object and converts it into a string in JSON syntax. This could be useful when you need to add an object into the JSON file. In order to do this, it has to be a string.</p>
-                    <h4>Example</h4>
-                    <p>Using the same example from before, I will create a new object in Javascript, then use Stringify to convert it to text.</p>
-                    <div class="code-example">
-                        <iframe width="100%" height="300" src="//jsfiddle.net/hannahtaylor/5w30mz4y/2/embedded/js,html,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                    <p>XMLHttpRequest is an object that browsers use to get and receive data from a web server. These web servers are especially helpful because background updates to the data can occur without the need to refresh a page. It also nice when there are large, tedious amounts of data that need to be stored in another place.</p>
+                    <p>This is the syntax for creating a new XMLHttpRequest:</p>
+                    <img src="/images/topic4-2.png" alt="XMLHttpRequest syntax" class="snippet">
+                    <p>To gain a better understanding of AJAX, I followed a tutorial on YouTube. This tutorial was very helpful in understanding how to access individual pieces of data from a server and output them to an HTML page.</p>
+                    <div class="video-example">
+                        <iframe width="100%" height="300" src="https://www.youtube.com/embed/rJesac0_Ftw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
+                    <h3>Tutorial Result</h3>
+                    <div class="code-example">
+                        <iframe width="100%" height="300" src="//jsfiddle.net/hannahtaylor/gv14x0jz/52/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                    </div>
+                    <p>Each step is explained in the comments of the JavaScript file. A simple explanation of what I did: I accessed an external JSON file that contained information about animals using the XMLHTTP request object and a URL to that file.  By accessing this URL, I was able to parse the data and pull it into my JavaScript file where I could access individual objects and arrays. When the button is clicked, all of the information is displayed in a sentence.</p>
                     <h4>Resources</h4>
                     <div class="links">
-                        <a class="source-link" href="https://www.w3schools.com/js/js_json_stringify.asp">w3schools</a>
-                    </div>
-                    <br><br>
+                        <a href="https://www.w3schools.com/js/js_ajax_http.asp" target="_blank" class="source-link">W3Schools</a>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest" target="_blank" class="source-link">MDN Web Docs</a>
+                    </div><br>
                 </div>
             </div>
- 
             <div class="entry">
-                    <button type="button" class="collapsible">Teaching Video</button>
+                <button type="button" class="collapsible">Teaching Video</button>
                     <div class="journal-entry">
-                        <br>
-                        <p>Coming Soon...
-                        </p>       
+                        <p><a href="https://screencast-o-matic.com/watch/cqlerYUJbk" target="_blank">This is my teaching video. </a>It begins at 0:00 and ends at 5:40.</p>       
                     </div>
-            </div>                        
+                </div>                                  
         </section>  
     </main>
     <footer>
