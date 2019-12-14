@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/style/recipe.css">
+    <title>What's for Dinner?</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="nav-icons">
+                <img src="chef.png" alt="chef logo" class="logo">
+                <div id="mySidebar" class="sidebar">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+                </div>
+                <div id="main" class="sideBarButton">
+                    <span class="myRecipes" onclick="openNav()">My Recipes</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="intro">
+                <h1>What's for Dinner?</h1>
+                <h2>Let us do the deciding for you!</h2>
+            <img class="bannerImg" src="cooking.jpg" alt="people cooking">
+            
+            <button id="generateButton" class="getRecipe" onclick="myFunction()">Show me a Recipe!</button>
+        </div>
+        <div id="displayRecipe" class="meal"></div>
+    </main>
+    <footer>
+        <span>Hannah Taylor | 2019</span>
+    </footer>
+    <script src="generator.js"></script>
+    <script src="sidebar.js"></script>
+</body>
+</html>
