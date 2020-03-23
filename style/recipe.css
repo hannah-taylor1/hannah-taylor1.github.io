@@ -35,13 +35,15 @@
     nav {
         background-color: #ffc857;
         margin: 0;
+        padding-top: 6px;
+        padding: 6px 0px 6px 0px;
         
     }
 
     .logo {
         height: 50px;
         width: auto;
-        padding: 5px;
+        padding: 5px 5px 5px 30px; 
     }
 
     .myRecipes {
@@ -49,7 +51,7 @@
         border: solid 1px #a4243b;
         border-radius: 30px;
         color: #a4243b;
-        margin-right: 10px;
+        margin-right: 30px;
         font-size: .65em;
         transition: all .5s ease-in;
         cursor: pointer;
